@@ -12,10 +12,9 @@ class TrafficLight:
         self.color = TrafficColor.G
         self.timer = None
         self.transition_times ={
-                TrafficColor.R: 3,
-                TrafficColor.Y: 3,
-                TrafficColor.G: 3
-    
+                TrafficColor.R: int(input("Wie lange soll die Ampel Rot bleiben?")),
+                TrafficColor.Y: int(input("Wie lange soll die Ampel Gelb bleiben?")),
+                TrafficColor.G: int(input("Wie lange soll die Ampel Grün bleiben?"))
                 }
         print(f"Traffic light is {self.color.value}")
         self.start_timer()
